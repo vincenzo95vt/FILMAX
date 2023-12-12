@@ -1,0 +1,16 @@
+body {
+    font-size: 16px;
+    background-color: black;
+    color: antiquewhite;
+    ;
+}
+svg {
+    border: 0.05px;
+    width: 15px;
+    height: 15px;
+    fill: currentColor;
+}
+article {
+    background-color: white;
+    color: black;
+}
