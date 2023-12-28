@@ -470,3 +470,46 @@ position: relative;
     font-size: 12px;
     bottom: -7px;
 }
+.news-container{
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    align-items:left;
+    text-align: left;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.options{
+    text-align: left;
+    padding-top: 100px;
+}
+.second-empty-space {
+    background-color: white;
+    padding-top: 100px;
+}
+
+ .latest-news {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    max-width: 1200px;
+    grid-template-columns: 50% 1fr 1fr;
+    grid-template-rows: 300px;
+ }
+ .latest-news .oscar-nomination {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+ }
+
+ .latest-news .film-treasures {
+    grid-column: 2;
+    grid-row: 1;
+ }
+ .latest-news .coachella {
+    grid-column: 3;
+    grid-row:1;
+ }
+ .latest-news .star-wars-star-trek {
+    grid-column: 2 / span 2;
+    grid-row: 2
+ }
