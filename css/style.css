@@ -23,6 +23,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+/*Inicio de la hoja de estilos con el header*/
 header {
     font-family: "Roboto Condensed", sans-serif;
     display: flex;
@@ -159,6 +160,8 @@ header {
     margin-left: 2px;
     fill: red;
 }
+/*Pasamos a la siguiente parte que son la lista de trailers*/
+
 .container-trailers-section{
     position: relative;
 }
@@ -262,7 +265,7 @@ position: relative;
     cursor: pointer;
     transition: color 0.5s ;
 }
-
+/* Ahora iremos con la parte de la imagen del Samurai*/
 .empty-space {
     padding: 30px;
     background-color: white;
@@ -283,6 +286,15 @@ position: relative;
 }
 .info{
     white-space: normal;
+}
+.new-releases::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: -30px;
+    height: 1px;
+    width: 48px;
+    background-color: red;
 }
 .new-releases {
     position: relative;
@@ -355,6 +367,8 @@ position: relative;
     color: gray;
     transition: color 0.3s ;
 }
+/* En esta parte vamos con la lista ampliada de trailers que ocupan el espacio de la pantalla entera*/
+
 .container-links {
     position: relative;
     bottom: -60px;
@@ -416,6 +430,9 @@ position: relative;
     padding-bottom: 20px;
     gap: 10px;
 }
+
+/* A partir de esta parte vamos con las citas y opiniones*/
+
 .quotes {
     position: relative;
     background-color: red;
@@ -470,6 +487,8 @@ position: relative;
     font-size: 12px;
     bottom: -7px;
 }
+/*Pasamos con el grid de noticias*/
+
 .news-container{
     display: block;
     max-width: 1200px;
@@ -619,6 +638,8 @@ position: relative;
     font-size: 12px;
     color: grey;
 }
+/*La ultima parte que es la del footer*/
+
 footer {
     background-color: #1a1d24;
 
@@ -651,6 +672,15 @@ footer .name-and-copyright img {
 footer .list-movies {
     display: block;
 }
+footer .name-and-copyright img::after {
+    content: "";
+    display: block;
+    position: relative;
+    height: 1px;
+    width: 48px;
+    background-color: red;
+}
+
 .list-movies h3 {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 20px;
