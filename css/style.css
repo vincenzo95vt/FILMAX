@@ -12,12 +12,7 @@ html {
 body {
     background-color: #F2F2F2;
 }
-.bg-main {
-    background-color: #1a1d24;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
+
 li {
     list-style: none;
 }
@@ -43,7 +38,13 @@ header {
     font-weight: 700;
     letter-spacing: 0.06em;
     padding-bottom: 20px;
-    
+}
+
+.bg-main {
+    background-color: #1a1d24;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 .header .main-menu ul, 
 .header .tools-menu, 
@@ -52,19 +53,82 @@ header {
     align-items: center;
     gap: 40px;
 }
-.header .main-menu ul li:hover {
-    content: "";
-    cursor: pointer;;
+.header .main-menu ul li a {
     position: relative;
+}
+.header .main-menu ul li a::after{
+    background-color: #1a1d24;
+}
+.header .main-menu ul li a:hover{
+    cursor: pointer;
+}
+.header .main-menu ul li a:hover::after {
+    content: "";
+    position: absolute;
+    cursor: pointer;
     display: flex;
     height: 1px;
-    width: 48px;
+    width: 100%;
     background-color: red;
-    bottom: 10px;
+    transition: 0.5s;
 }
+
 .header svg {
     width: 20px;
     height: 20px;
+}
+/*configuramos primero el aside delas 3 opciones*/
+
+.aside-container-buy-options{
+    position:fixed;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.aside-container-buy-options .buy-now {
+    width: 85px;
+    height: 60px;
+    background-color:#e0011a;
+    box-shadow: 0px 0px 50px #A20025;
+    margin-bottom: 2px;
+    transition: 0.5s
+}
+.aside-container-buy-options .buy-now:hover{
+    cursor: pointer;
+    transform: translateX(-15px);
+}
+.aside-container-buy-options .gallery{
+    width: 85px;
+    height: 60px;
+    background-color:#e0011a;
+    margin-bottom: 2px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 50px #A20025;
+}
+.aside-container-buy-options .gallery:hover{
+    cursor: pointer;
+    transform: translateX(-11px);
+}
+.aside-container-buy-options .hide-panel{
+    width: 85px;
+    height: 60px;
+    background-color:#e0011a;
+    margin-bottom: 2px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 50px #A20025;
+}
+.aside-container-buy-options .hide-panel:hover{
+    cursor: pointer;
+    transform: translateX(-11px);
+}
+.aside-container-buy-options svg{
+    position: relative;
+    top: 15px;
+    left: 18px;
+    width: 20px;
+    height: 30px;
 }
 .news {
     position: relative;
@@ -402,11 +466,12 @@ position: relative;
     z-index: 1;
     padding-bottom: 20px;
 }
-.trailers .info-film { 
+.info-film { 
     position: absolute;
     display: flex;
     flex-direction: column;
-    bottom: 50px;
+    bottom: 0px;
+    transition: 0.5s;
 }
 .trailers .info-film .name-film {
     position: relative;
@@ -416,7 +481,7 @@ position: relative;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: bold;
     letter-spacing: 0px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     font-stretch: extra-expanded
 }
 
@@ -430,7 +495,7 @@ position: relative;
     font-size: 13px;
     text-transform: none;
     letter-spacing: -0.5px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 .trailers .info-film .link-info {
     position: relative;
@@ -438,12 +503,34 @@ position: relative;
     font-family: "Roboto", sans-serif;
     left: 20px;
     color: white;
+    transition: 0.5s;
     font-weight: bold;
     font-size: 9px;
     text-transform: none;
     letter-spacing: 0px;
     padding-bottom: 20px;
     gap: 10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.trailers .info-film .link-info a,
+.trailers .info-film .link-info button{
+    transition: 0.5s;
+}
+.trailers article:hover .info-film{
+    transform: translateY(-70%);
+}
+.trailers article:hover .info-film .name-film,
+.trailers article:hover .info-film .genres {
+    cursor: pointer;
+}
+.trailers article:hover .info-film .link-info{
+    opacity: 1;
+}
+.trailers .info-film .link-info a:hover,
+.trailers .info-film .link-info button:hover{
+    cursor: pointer;
+    color: gray;
 }
 
 /* A partir de esta parte vamos con las citas y opiniones*/
@@ -453,30 +540,50 @@ position: relative;
     background-color: #e0011a;
     padding-top: 150px;
     padding-bottom: 150px;
-    bottom: 29px;
+    bottom:30px;
 }
 .container-quotes {
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-}
-.personquote {
     max-width: 1200px;
+    margin-inline: auto;
+    gap: 40px;
+    overflow: hidden;
+    
+}
+.personquote{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    flex: 0 0 385px;
 }
 .personquote img {
-    position: relative;
-    bottom: 50px;;
+    bottom: 50px;
     border-radius: 50%;
     justify-items: center;
+    margin-bottom: 10px;
+}
+.personquote .img-person{
+    position: relative;
+}
+.personquote .img-person::before{
+    content: "";
+    background-image: url("../quotes_icon-icons.com_71111.svg");
+    background-size: cover;
+    background-color: white;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%) ;
+    z-index: 1;
+    display: inline-block;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
 }
 .personquote .sentence p:first-child {
-    position: relative;
     bottom: 25px;
+    margin-bottom: 10px;
     font-family: "Times New Roman", sans-serif;
     font-weight: normal;
     letter-spacing: 0;
@@ -485,7 +592,7 @@ position: relative;
 }
 .personquote .sentence {
     color: white;
-    position: relative;
+    margin-bottom: 10px;
     bottom: -5px;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 14px;
@@ -496,7 +603,6 @@ position: relative;
 }
 
 .personquote span{
-    position: relative;
     color: #abb8c3;
     font-weight: bold;
     font-size: 12px;
@@ -779,3 +885,6 @@ footer .newsletter {
     display: flex;
     justify-content: space-between;
 }
+/*scroll-behaviour: smooth sirve para que el scroll cuando pinches en un hover tenga un desplazamiento suave hacia la parte donde esta anclado la info. 
+overflow: cuando el contenido de la caja es mayor que el tamaño de la caja en si. Podemos ocultarlo "hidden", que haga scroll "scroll", o bien que sea automatico "auto" que solo te muestra el scroll que hace falta. 
+drop-shadow: se utiliza para poner sombras en las imagenes .png y que vayan acorde a la silueta ya que si le ponemos sombras con box-shadow nos sombrea el recuadro, no la imagen. 
