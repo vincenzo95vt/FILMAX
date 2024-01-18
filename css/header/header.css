@@ -1,13 +1,13 @@
 /*Inicio de la hoja de estilos con el header*/
 header {
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: var(--primary-font), sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
     background-color: #1a1d24;
-    color: white;
-    fill: white;
+    color: var(--primary-color);
+    fill: var(--primary-color);
     max-width: 1200px;
     margin: 0 auto;
     margin-inline: auto;
@@ -19,7 +19,7 @@ header {
 }
 
 .bg-main {
-    background-color: #1a1d24;
+    background-color: var(--secondary-color);
     position: sticky;
     top: 0;
     z-index: 999;
@@ -42,7 +42,7 @@ header {
     transition:  0.3s ease;
     transform-origin: left;
     height: 1px;
-    background-color: red;
+    background-color: var(--terciary-color);
 }
 .header .main-menu ul li a:hover{
     cursor: pointer;

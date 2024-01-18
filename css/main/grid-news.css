@@ -18,7 +18,7 @@
 }
 .options h2{
     padding-bottom: 10px;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: var(--primary-font), sans-serif;
     font-weight: bold;
     font-size: 45px;
 }
@@ -28,18 +28,18 @@
     position: relative;
     height: 1px;
     width: 48px;
-    background-color: red;
+    background-color: var(--terciary-color);
     top: -15px;
 }
 .options p {
     padding-bottom: 20px;
-    font-family: "Times New Roman", sans-serif;
+    font-family: var(--terciary-font), sans-serif;
     font-weight: normal;
     font-size: 18px;
-    color: gray;
+    color: var(--other-color);
 }
 .second-empty-space {
-    background-color: white;
+    background-color: var(--primary-color);
     padding-top: 100px;
 }
 
@@ -94,20 +94,8 @@
     text-align: center;
     padding-top: 20px;
  }
- .more-news button{
-    background-color: #e0041d;
-    color: white;
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: bold;
-    font-size: 13px;
-    border-radius: 5%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
- }
-
-.oscar-nomination .text-info{
+ 
+ .oscar-nomination .text-info{
     position: relative;
     text-align: justify;
     padding: 30px;
@@ -136,25 +124,47 @@
     gap: 20px;
 }
 .text-info .home-grid {
-    font-family: "Roboto Condensed", sans-serif;
-    color: orange;
+    font-family: var(--primary-font), sans-serif;
+    color: var(--line-color-gold);
     font-weight: bold;
     font-size: 12px;
 }
 .oscar-nomination .text-info .article-name {
-    font-family: "Roboto Condensed", sans-serif;
-    color:white;
+    font-family: var(--primary-font), sans-serif;
+    color:var(--primary-color);
     font-size: 35px;
     font-weight: bold;
 }
 .text-info .article-name {
-    font-family: "Roboto Condensed", sans-serif;
-    color:white;
+    font-family: var(--primary-font), sans-serif;
+    color:var(--primary-color);
     font-size: 17px;
     font-weight: bold;
 }
 .text-info .date {
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: var(--primary-font), sans-serif;
     font-size: 12px;
-    color: #abb8c3;
+    color: var(--other-color);
+}
+.more-news button{
+   background-color: var(--background-quotes-color);
+   color: var(--primary-color);
+   font-family: var(--primary-font), sans-serif;
+   font-weight: bold;
+   font-size: 13px;
+   border-radius: 5%;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   padding-left: 30px;
+   padding-right: 30px;
+   transition: 0.3s;
+   ;
+   &:hover {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 32px;
+    padding-right: 32px;
+    cursor: pointer;
+    background-color: var(--primary-shadow-color);
+   }
 }
