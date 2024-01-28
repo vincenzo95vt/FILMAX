@@ -56,4 +56,9 @@ header {
 .header svg {
     width: 20px;
     height: 20px;
+    transition: 0.5s;
+    &:hover{
+        cursor: pointer;
+        fill: var(--terciary-color);
+    }
 }
