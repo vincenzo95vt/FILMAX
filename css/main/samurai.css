@@ -1,0 +1,103 @@
+/* Ahora iremos con la parte de la imagen del Samurai*/
+
+.empty-space {
+    padding: 30px;
+    background-color: var(--primary-color);
+}
+.samurai-container{
+    position:relative;
+    margin-bottom: -169px;
+    background-color: var(--primary-color);
+}
+.samurai-info {
+    display: block;
+    position: relative;
+    margin: 5px;
+    left: 800px;
+    top: -300px;
+    gap: 30px;
+    max-width: 600px;
+}
+.info{
+    white-space: normal;
+}
+.new-releases::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: -30px;
+    height: 1px;
+    width: 48px;
+    background-color: var(--terciary-color);
+}
+.new-releases {
+    position: relative;
+    bottom: 80px;
+    font-family: var(--primary-font), sans-serif;
+    color: var(--other-color);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.name {
+    position: relative;
+    bottom: 50px;
+    font-family: var(--primary-font), sans-serif;
+    color: var(--samurai-text-color);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.seasons-and-platform {
+    display: flex;
+}
+
+.platform {
+    position: relative;
+    bottom: 20px;
+    font-size: 16px;
+    font-family: var(--primary-font), sans-serif;
+    color: var(--samurai-text-color);
+    font-weight: 700;
+    letter-spacing: 0px;
+}
+.seasons {
+    position: relative;
+    bottom: 20px;
+    font-size: 16px;
+    font-family: var(--primary-font), sans-serif;
+    color: var(--samurai-text-color);
+    left: 30px;
+    font-weight: 700;
+    letter-spacing: 0px;
+}
+.info {
+    position: relative;
+    bottom: -10px;
+    font-family: var(--secondary-font), sans-serif;
+    color: var(--other-color);
+}
+.link-more-info {
+    position: relative;
+    color: var(--terciary-color);
+    font-family: var(--primary-font), sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+.link-more-info:hover{
+    cursor: pointer;
+    color: var(--background-quotes-color);
+    transition: color 0.3s ;
+}
+.watch-trailer{
+    position: relative;
+    font-family: var(--primary-font), sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+.watch-trailer:hover{
+    cursor: pointer;
+    color: var(--other-color);
+    transition: color 0.3s ;
+}

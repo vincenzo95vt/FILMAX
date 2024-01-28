@@ -1,0 +1,111 @@
+/*configuramos primero el aside delas 3 opciones*/
+
+.news {
+    position: relative;
+    background-color: var(--secondary-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    color: var(--primary-color);
+}
+
+.bg-articles {
+    background-color: var(--secondary-color);
+}
+.news > article {
+    width: 100%;
+    height: 600px;
+    background-image: url("https://filmax.themerex.net/wp-content/uploads/2018/01/top-promo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.news .news-data > h2:hover {
+    color: var(--other-color);
+    transition: color 0.5s;
+    cursor: pointer;
+}
+.news aside h2 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family:var(--primary-font), sans-serif ;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.05em;
+
+}
+.news aside article {
+    display: flex;
+    gap: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.09em;
+    margin-bottom: 35px;
+    text-transform: none;
+}
+
+.news aside article time {
+    color: var(--other-color);
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+.news aside article:hover {
+    color: var(--other-color);
+    transition: color 0.5s;
+    cursor: pointer;
+}
+
+.news aside article:last-child {
+    margin-bottom: 0;
+}
+.news .news-data {
+    font-family: var(--primary-font), sans-serif;
+    position: absolute;
+    z-index: 998;
+    bottom: 0;
+    right: 0;
+    max-width: 400px;
+    padding: 40px 0 0 40px;
+    background-color: var(--secondary-color);
+}
+.news .news-data h2 {
+    margin-bottom: 20px ;
+}
+.news .news-data p{
+    font-size: 14px;
+    color: var(--other-color);
+    gap: 30px;
+}
+.news .news-data p {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.news .news-data h2 {
+    font-size: 37px;
+    text-transform: uppercase;
+    font-family: var(--primary-font), sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+
+}
+.news .news-data a {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.news .news-data a:hover {
+    color: var(--terciary-color);
+    cursor: pointer;
+    transition: color 0.5s;
+}
+.news .news-data svg {
+    width: 12px;
+    height: 12px;
+    margin-left: 2px;
+    fill: var(--terciary-color);
+}

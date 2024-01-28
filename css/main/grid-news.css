@@ -1,0 +1,180 @@
+/*Pasamos con el grid de noticias*/
+
+.news-container{
+    display: block;
+    max-width: 1200px;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.options{
+    text-align: left;
+    display:block;
+    gap: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.options h2{
+    padding-bottom: 10px;
+    font-family: var(--primary-font), sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+}
+.options h2::before{
+    content: "";
+    display: block;
+    position: relative;
+    height: 1px;
+    width: 48px;
+    background-color: var(--terciary-color);
+    top: -15px;
+}
+.options p {
+    padding-bottom: 20px;
+    font-family: var(--terciary-font), sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: var(--other-color);
+}
+.second-empty-space {
+    background-color: var(--primary-color);
+    padding-top: 100px;
+}
+
+ .latest-news {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(4,300px);
+    grid-template-rows: 300px 300px 10px;
+    gap: 30px;
+    padding-bottom:160px;
+ }
+ .latest-news .oscar-nomination {
+    grid-column: 1 /span 2 ;
+    grid-row: 1 / span 2;
+    text-align: center;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url("https://filmax.themerex.net/wp-content/uploads/2017/12/post-3-copyright.jpg");
+    background-size: cover;
+    background-position: center;
+    gap: 30px;
+ }
+
+ .latest-news .film-treasures {
+    grid-column: 3;
+    grid-row: 1;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url("https://filmax.themerex.net/wp-content/uploads/2017/12/post-12-copyright.jpg");
+    background-size: cover;
+    background-position: center;
+ }
+ .latest-news .coachella {
+    grid-column: 4;
+    grid-row:1;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url("https://filmax.themerex.net/wp-content/uploads/2017/12/post-5-copyright.jpg");
+    background-size: cover;
+    background-position: center
+ }
+ .latest-news .star-wars-star-trek {
+    grid-column: 3 / span 2;
+    grid-row: 2;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url("https://filmax.themerex.net/wp-content/uploads/2017/12/post-6-copyright.jpg");
+    background-size: cover;
+    background-position: center
+ }
+ .latest-news .more-news{
+    grid-column: 1/ span 4;
+    grid-row: 3;
+    text-align: center;
+    padding-top: 20px;
+ }
+ 
+ .oscar-nomination .text-info{
+    position: relative;
+    text-align: justify;
+    padding: 30px;
+    bottom: -400px; 
+}
+.film-treasures .text-info{
+    position: relative;
+    text-align: justify;
+    padding:30px;
+    bottom: -125px;
+}
+.coachella .text-info {
+    position: relative;
+    text-align: justify;
+    padding: 30px;
+    bottom: -125px;
+}
+.star-wars-star-trek .text-info {
+    position: relative;
+    text-align: justify;
+    padding: 30px;
+    bottom: -150px;
+}
+.text-info {
+    display: grid;
+    gap: 20px;
+}
+.text-info .home-grid {
+    font-family: var(--primary-font), sans-serif;
+    color: var(--line-color-gold);
+    font-weight: bold;
+    font-size: 12px;
+}
+.oscar-nomination .text-info .article-name {
+    font-family: var(--primary-font), sans-serif;
+    color:var(--primary-color);
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.5s;
+    &:hover{
+        cursor: pointer;
+        color: var(--line-color-gold);
+    }
+}
+.text-info .article-name {
+    font-family: var(--primary-font), sans-serif;
+    color:var(--primary-color);
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+    &:hover{
+        cursor: pointer;
+        color: var(--line-color-gold);
+    }
+}
+.text-info .date {
+    font-family: var(--primary-font), sans-serif;
+    font-size: 12px;
+    color: var(--other-color);
+}
+.more-news button{
+   background-color: var(--background-quotes-color);
+   color: var(--primary-color);
+   font-family: var(--primary-font), sans-serif;
+   font-weight: bold;
+   font-size: 13px;
+   border-radius: 5%;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   padding-left: 30px;
+   padding-right: 30px;
+   transition: 0.3s;
+   ;
+   &:hover {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 32px;
+    padding-right: 32px;
+    cursor: pointer;
+    background-color: var(--primary-shadow-color);
+   }
+}

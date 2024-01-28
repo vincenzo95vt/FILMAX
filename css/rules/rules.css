@@ -1,0 +1,14 @@
+/*Declaramos las reglas y variables*/
+:root {
+    --primary-font:"Roboto Condensed";
+    --secondary-font: "Roboto";
+    --terciary-font: "Times New Roman";
+    --primary-color : white ;
+    --secondary-color: #1a1d24;
+    --terciary-color:  red;
+    --other-color : gray;
+    --samurai-text-color:black;
+    --background-quotes-color: #e0011a ;
+    --primary-shadow-color: #A20025;
+    --line-color-gold: orange;
+}

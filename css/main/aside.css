@@ -1,0 +1,52 @@
+/* En esta hoja desarrollaremos el aside*/
+.aside-container-buy-options{
+    position:fixed;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.aside-container-buy-options .buy-now {
+    width: 85px;
+    height: 60px;
+    background-color:var(--background-quotes-color);
+    box-shadow: 0px 0px 50px var(--primary-shadow-color);
+    margin-bottom: 2px;
+    transition: 0.5s
+}
+.aside-container-buy-options .buy-now:hover{
+    cursor: pointer;
+    transform: translateX(-15px);
+}
+.aside-container-buy-options .gallery{
+    width: 85px;
+    height: 60px;
+    background-color:var(--background-quotes-color);
+    margin-bottom: 2px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 50px var(--primary-shadow-color);
+}
+.aside-container-buy-options .gallery:hover{
+    cursor: pointer;
+    transform: translateX(-11px);
+}
+.aside-container-buy-options .hide-panel{
+    width: 85px;
+    height: 60px;
+    background-color:var(--background-quotes-color);
+    margin-bottom: 2px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 50px var(--primary-shadow-color);
+}
+.aside-container-buy-options .hide-panel:hover{
+    cursor: pointer;
+    transform: translateX(-11px);
+}
+.aside-container-buy-options svg{
+    position: relative;
+    top: 15px;
+    left: 18px;
+    width: 20px;
+    height: 30px;
+}

@@ -1,0 +1,15 @@
+@import url("./rules/rules.css");
+@import url("./rules/reset.css");
+@import url("./header/header.css");
+@import url("./main/aside.css");
+@import url("./main/news.css");
+@import url("./main/trailers.css");
+@import url("./main/samurai.css");
+@import url("./main/big-trailers.css");
+@import url("./main/quotes.css");
+@import url("./main/grid-news.css");
+@import url("./footer/footer.css");
+
+/*scroll-behaviour: smooth sirve para que el scroll cuando pinches en un hover tenga un desplazamiento suave hacia la parte donde esta anclado la info. 
+overflow: cuando el contenido de la caja es mayor que el tamaño de la caja en si. Podemos ocultarlo "hidden", que haga scroll "scroll", o bien que sea automatico "auto" que solo te muestra el scroll que hace falta. 
+drop-shadow: se utiliza para poner sombras en las imagenes .png y que vayan acorde a la silueta ya que si le ponemos sombras con box-shadow nos sombrea el recuadro, no la imagen. 

@@ -1,0 +1,131 @@
+/*La ultima parte que es la del footer*/
+
+footer {
+    background-color: var(--secondary-color);
+
+}
+footer .last-footer {
+    display: flex;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+footer svg{
+    width: 20px;
+    height: 20px;
+    fill: var(--primary-color);
+}
+footer .name-and-copyright {
+    display: block;
+    color: var(--other-color);
+    font-family: var(--terciary-font), sans-serif;
+    font-size: 18px;
+}
+footer .name-and-copyright img {
+    padding-bottom: 25px;
+}
+footer .list-movies {
+    display: block;
+}
+
+.list-movies h3 {
+    font-family: var(--primary-font), sans-serif;
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding-bottom: 25px;
+
+} 
+.list-movies h3::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    height: 1px;
+    width: 48px;
+    top: -5px;
+    left: 12px;
+    background-color: var(--terciary-color);
+}
+footer .list-movies li{
+    padding-bottom: 25px;
+    color: var(--other-color);
+    font-family: var(--terciary-font), sans-serif;
+    font-size: 18px;
+    a{
+        transition: 0.3s;
+        &:hover{
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+    }
+}
+footer .additional-links h3{
+    font-family: var(--primary-font), sans-serif;
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+footer .additional-links h3::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    height: 1px;
+    width: 48px;
+    top: -5px;
+    left: 12px;
+    background-color: var(--terciary-color);
+}
+footer .additional-links li{
+    padding-bottom: 25px;
+    color: var(--other-color);
+    font-family: var(--terciary-font), sans-serif;
+    font-size: 18px;
+    a{
+        transition: 0.3s;
+        &:hover{
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+    }
+}
+footer .newsletter {
+    padding-bottom: 25px;
+}
+.newsletter h3{
+    font-family: var(--primary-font), sans-serif;
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.newsletter h3::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    height: 1px;
+    width: 48px;
+    top: -5px;
+    left: 12px;
+    background-color: var(--terciary-color);
+}
+.newsletter h3,
+.newsletter div {
+    padding-bottom: 25px;
+}
+.newsletter div input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.newsletter svg {
+    position: relative;
+    top: 6px;
+}
+.newsletter .social-network{
+    display: flex;
+    justify-content: space-between;
+}
