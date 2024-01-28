@@ -134,12 +134,22 @@
     color:var(--primary-color);
     font-size: 35px;
     font-weight: bold;
+    transition: 0.5s;
+    &:hover{
+        cursor: pointer;
+        color: var(--line-color-gold);
+    }
 }
 .text-info .article-name {
     font-family: var(--primary-font), sans-serif;
     color:var(--primary-color);
     font-size: 17px;
     font-weight: bold;
+    transition: 0.3s;
+    &:hover{
+        cursor: pointer;
+        color: var(--line-color-gold);
+    }
 }
 .text-info .date {
     font-family: var(--primary-font), sans-serif;
