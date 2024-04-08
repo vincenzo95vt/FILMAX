@@ -3,6 +3,7 @@
 .news-container{
     display: block;
     max-width: 1200px;
+    min-width: auto;
     justify-content: center;
     align-items:center;
     text-align: center;
